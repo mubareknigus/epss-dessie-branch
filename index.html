@@ -5,31 +5,108 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EPSS Dessie Branch</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; background-color: #f9f9f9; }
-    h1 { color: #0055A5; }
-    table { border-collapse: collapse; width: 100%; max-width: 500px; margin-top: 10px; }
-    th, td { border: 1px solid #333; padding: 8px; text-align: center; }
-    th { background-color: #f2f2f2; }
-    a { color: #0055A5; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .contact { margin-bottom: 20px; }
-    iframe { margin-top: 20px; border: 0; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 10px;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    h1, h2 {
+      color: #0055A5;
+      text-align: center;
+    }
+    .contact {
+      margin-bottom: 20px;
+      padding: 15px;
+      background-color: #e8f0fe;
+      border-radius: 12px;
+      text-align: center;
+    }
+    .contact p, .contact strong {
+      display: block;
+      word-wrap: break-word;
+      margin: 5px 0;
+    }
+    .buttons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 10px 0;
+    }
+    .buttons a {
+      display: inline-block;
+      padding: 12px 20px;
+      background-color: #0055A5;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+    .buttons a:hover {
+      background-color: #003f7f;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      max-width: 500px;
+      margin: 10px auto;
+    }
+    th, td {
+      border: 1px solid #333;
+      padding: 8px;
+      text-align: center;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    iframe {
+      width: 100%;
+      height: 350px;
+      margin-top: 20px;
+      border: 0;
+      border-radius: 12px;
+    }
+    a {
+      color: #0055A5;
+      word-break: break-all;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive adjustments */
+    @media screen and (max-width: 600px) {
+      body { margin: 5px; }
+      table, th, td { font-size: 14px; }
+      h1, h2 { font-size: 20px; }
+      iframe { height: 300px; }
+      .buttons a { padding: 10px 15px; font-size: 14px; }
+    }
   </style>
 </head>
 <body>
   <h1>EPSS Dessie Branch</h1>
   
   <div class="contact">
-    እባክዎ መልስ ሲሰጡ የኛን ደብዳቤ ቁጥር ይጥቀሱ<br>
-    <strong>Branch Manager:</strong> Eshetie Shumie<br>
-    <strong>Office phone:</strong> 0331150015<br>
-    <strong>Mobile:</strong> +251 914 31 01 02 / 0930821616<br>
-    <strong>Email:</strong> 
+    <p>እባክዎ መልስ ሲሰጡ የኛን ደብዳቤ ቁጥር ይጥቀሱ</p>
+    <p><strong>Branch Manager:</strong> Eshetie Shumie</p>
+    <p><strong>Office phone:</strong> 0331150015</p>
+    <p><strong>Mobile:</strong> +251 914 31 01 02 / 0930821616</p>
+    <p><strong>Email:</strong>
       <a href="mailto:eshetie.shumie@epss.gov.et">eshetie.shumie@epss.gov.et</a>, 
       <a href="mailto:eshetieshumie@gmail.com">eshetieshumie@gmail.com</a>, 
-      <a href="mailto:mahlet23maru@gmail.com">mahlet23maru@gmail.com</a><br>
-    <strong>Website:</strong> <a href="http://www.epss.gov.et" target="_blank">www.epss.gov.et</a><br>
-    <strong>Postal:</strong> P.O. Box 790
+      <a href="mailto:mahlet23maru@gmail.com">mahlet23maru@gmail.com</a>
+    </p>
+    <p><strong>Website:</strong> <a href="http://www.epss.gov.et" target="_blank">www.epss.gov.et</a></p>
+    <p><strong>Postal:</strong> P.O. Box 790</p>
+
+    <div class="buttons">
+      <a href="tel:+251914310102">Call Branch</a>
+      <a href="mailto:eshetie.shumie@epss.gov.et">Email Branch</a>
+      <a href="https://www.google.com/maps?q=11.163002902733533,39.67315587537181" target="_blank">Open Map</a>
+    </div>
   </div>
 
   <h2>Open Working Hours (Mon–Fri)</h2>
@@ -47,12 +124,11 @@
   </table>
 
   <h2>Location Map</h2>
-  <p>GPS Coordinates: 11.163002902733533, 39.67315587537181</p>
+  <p>GPS Coordinates: 11.1630029, 39.6731559</p>
   <p>Plus Code: 5M7F+368, Tita, Ethiopia</p>
-
   <iframe
     src="https://www.google.com/maps?q=11.163002902733533,39.67315587537181&hl=es;z=14&output=embed"
-    width="100%" height="400" allowfullscreen="" loading="lazy">
+    allowfullscreen="" loading="lazy">
   </iframe>
 
 </body>
